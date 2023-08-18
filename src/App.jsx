@@ -1,9 +1,12 @@
+import Header from './components/Header.jsx';
+import CallToAction from './components/CallToAction.jsx';
+
 function App() {
 
   return (
-    <div className="w-screen h-screen bg-gray-500">
-      <p className="text-2xl">Hello world</p>
-      <p> testing main branch protection</p>
+    <div className="w-screen h-screen">
+      <Header />
+      <CallToAction />
     </div>
   )
 }
