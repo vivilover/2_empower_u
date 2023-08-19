@@ -11,10 +11,10 @@ export default function Freebies() {
           </p>
         </div>
       </div>
-      <div className="hidden md:grid grid-cols-3 gap-4 ml-4 mr-4 text-center font-semibold md:text-lg mt-5">
+      <div className="hidden md:grid grid-cols-3 gap-4 ml-4 mr-4 text-center font-semibold md:text-lg xl:text-3xl mt-5">
         <p> Our Newsletter </p>
         <p> Mentorship </p>
-        <p> Success Reprot </p>
+        <p> Success Report </p>
       </div>
       <div className="flex flex-col md:grid grid-cols-3 md:gap-4 ml-4 mr-4 pt-1">
         <div className="pt-2">
