@@ -1,3 +1,5 @@
+import Freebie from "./Freebie";
+
 export default function Freebies() {
   return (
     <>
@@ -11,46 +13,24 @@ export default function Freebies() {
           </p>
         </div>
       </div>
-      <div className="hidden md:grid grid-cols-3 gap-4 ml-4 mr-4 text-center font-semibold md:text-lg xl:text-3xl mt-5">
-        <p> Our Newsletter </p>
+      <div className="hidden md:grid grid-cols-3 gap-4 lg:gap-12 ml-4 mr-4 text-center md:text-lg xl:text-3xl mt-9 lg:max-w-[1800px] md:mx-auto font-bold">
+        <p className="pl-4"> Our Newsletter </p>
         <p> Mentorship </p>
-        <p> Success Report </p>
+        <p className="pr-4"> Success Report </p>
       </div>
-      <div className="flex flex-col md:grid grid-cols-3 md:gap-4 ml-4 mr-4 pt-1">
-        <div className="pt-2">
-          <h2 className="md:hidden text-center pb-1 font-semibold">
-            Our Newsletter
-          </h2>
-          <div className="bg-gray-200 p-2 md:p-4 rounded-lg h-[75px] md:h-[175px] flex items-center md:items-start justify-center">
-            <p className="font-semibold text-[0.85rem] md:text-xl lg:text-2xl">
-              One newsletter a week to help you achieve your goals.
-              <br />
-              <br className="hidden md:block" />
-              Every Monday.
-            </p>
-          </div>
-        </div>
-        <div className="pt-2">
-          <h2 className="md:hidden text-center pb-1 font-semibold">
-            Mentorship
-          </h2>
-          <div className="bg-gray-200 p-2 md:p-4 rounded-lg h-[75px] md:h-[175px] flex items-center md:items-start justify-center">
-            <p className="font-semibold text-[0.85rem] md:text-xl lg:text-2xl">
-              1:1 coaching sessions to coach, educate, equip, and advise you on
-              how to live a spirit led life.
-            </p>
-          </div>
-        </div>
-        <div className="pt-2">
-          <h2 className="md:hidden text-center pb-1 font-semibold">
-            Success Report
-          </h2>
-          <div className="bg-gray-200 p-2 md:p-4 rounded-lg h-[75px] md:h-[175px] flex items-center md:items-start justify-center">
-            <p className="font-semibold text-[0.85em] md:text-xl lg:text-2xl">
-              &quot;7 Biblical Principles to Success Report&quot; for FREE!
-            </p>
-          </div>
-        </div>
+      <div className="flex flex-col md:grid grid-cols-3 md:gap-4 lg:gap-12 ml-4 mr-4 pt-1 lg:max-w-[1800px] md:mx-auto md:p-4">
+        <Freebie
+          freebie="Our Newsletter"
+          description="One podcast a week to help you achieve your goals. <br/> <br/> Every Monday. "
+        />
+        <Freebie
+          freebie="Mentorship"
+          description="1:1 Coaching sessions to coach, educate, equip, and advise you on how to live a spirit led life."
+        />
+        <Freebie
+          freebie="Success Report"
+          description='"7 Biblical Principals to Success Report" for FREE!'
+        />
       </div>
     </>
   );
