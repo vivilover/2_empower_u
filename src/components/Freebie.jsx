@@ -1,4 +1,5 @@
 import parse from "html-react-parser";
+import PropTypes from "prop-types";
 
 export default function Freebie({ freebie, description }) {
   return (
@@ -12,3 +13,8 @@ export default function Freebie({ freebie, description }) {
     </div>
   );
 }
+
+Freebie.propTypes = {
+  freebie: PropTypes.string,
+  description: PropTypes.string,
+};

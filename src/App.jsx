@@ -1,16 +1,7 @@
-import Header from './components/Header.jsx';
-import CallToAction from './components/CallToAction.jsx';
-import Freebies from './components/Freebies.jsx';
+import Routes from "./Routes";
 
 function App() {
-
-  return (
-    <div className="w-screen h-screen">
-      <Header />
-      <CallToAction />
-      <Freebies/>
-    </div>
-  )
+  return <Routes />;
 }
 
-export default App
+export default App;
