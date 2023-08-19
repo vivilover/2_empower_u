@@ -1,5 +1,6 @@
 import Header from './components/Header.jsx';
 import CallToAction from './components/CallToAction.jsx';
+import Freebies from './components/Freebies.jsx';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <div className="w-screen h-screen">
       <Header />
       <CallToAction />
+      <Freebies/>
     </div>
   )
 }
