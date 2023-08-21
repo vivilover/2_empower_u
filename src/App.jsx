@@ -1,6 +1,8 @@
 import Header from './components/Header.jsx';
 import CallToAction from './components/CallToAction.jsx';
 import Freebies from './components/Freebies.jsx';
+import SocialMedia from './components/SocialMedia.jsx';
+import Testimonials from './components/Testimonials.jsx';
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
       <Header />
       <CallToAction />
       <Freebies/>
+      <SocialMedia />
+      <Testimonials />
     </div>
   )
 }
